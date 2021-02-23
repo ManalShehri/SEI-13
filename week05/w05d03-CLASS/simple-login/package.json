@@ -1,0 +1,22 @@
+{
+  "name": "simple-login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "latest",
+    "body-parser": "latest",
+    "connect-mongo": "latest",
+    "dotenv": "latest",
+    "ejs": "latest",
+    "express": "latest",
+    "express-session": "latest",
+    "express-validator": "^6.9.0",
+    "mongoose": "latest"
+  }
+}

@@ -1,0 +1,20 @@
+<head>
+  <title> Fruit</title>
+</head>
+    <h1>We have <%=(type || "fruit")+"s"%> here</h1>
+
+    <ul>
+      <% fruits.forEach((ele,i) => { %>
+      <li>
+        <a href="/fruits/<%=ele._id%> "> go to the fruit  <%=ele.name %> </a> 
+        <br>
+        <a href="/fruits/<%= ele._id %>/edit">EDIT</a>
+        <form action="/fruits/<%=ele._id %>?_method=DELETE" method="POST">
+          <input type="submit" value="DELETE" />
+        </form>
+      </li>
+      <% }) %>
+    </ul>
+
+    <a href="/fruits/new"> add new Fruit </a>
+

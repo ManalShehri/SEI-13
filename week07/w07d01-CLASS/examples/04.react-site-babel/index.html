@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <!-- Page Info -->
+  <head>
+
+    <!-- Javascript -->
+
+  </head>
+  <title>Hello React</title>
+</head>
+<body>
+  <h1>Hello React</h1>
+
+  <!-- Page Content -->
+    <div id="root">
+    </div>
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script type="text/babel">
+      const rootElement = document.getElementById('root')
+
+      function Greetings(props){
+        console.log(props)
+        return (<p>Hello dear {props.userName}</p>)
+      }
+
+      function App(props){
+        const mySum = 3+2;
+
+        const myUserName = "SEIR-13"
+
+        return (<Greetings userName={myUserName} sum={mySum}/>)
+      }
+
+      ReactDOM.render(<App />, rootElement)
+    </script>
+  </body>
+</html>

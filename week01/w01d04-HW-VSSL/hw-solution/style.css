@@ -1,0 +1,119 @@
+body{
+    font-family: sans-serif;
+}
+
+header{
+    position: relative;
+}
+
+#header-text{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+}
+
+#page-title{
+    text-align: center;
+    color: #FFF;
+}
+
+#page-title h1{
+    font-size: 70px;
+    margin: 0;
+}
+
+
+#sailboat{
+    width: 100%;
+    max-height: 80vh;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: #1d1d1d;
+    color: #FFF;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.no-pad{
+    padding: 0px;
+    margin-top: 0;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+main{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+#jumbotron{
+    text-align: center;
+    padding: 100px;
+    font-size: 45px;
+    line-height: 70px
+}
+
+#columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+#columns section{
+    width: 300px;
+    justify-content: center;
+}
+
+#columns section h3{
+    font-size: 25px;
+}
+
+#columns section h4{
+    cursor: pointer;
+}
+
+.img-column{
+    width: 100%;
+    height: 200px;
+}
+
+.alt-font{
+    line-height: 25px;
+}
+
+.italics{
+    font-style: italic;
+}
+
+#banner{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+footer{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#facetwit{
+    width: 130px;
+}

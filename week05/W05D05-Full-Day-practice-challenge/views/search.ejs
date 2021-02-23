@@ -1,0 +1,50 @@
+<head>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+
+<div class="home__top">
+
+    <div class="home__top__right search-bar">
+        <form action="">
+            <input class="search-bar__text" type="text" />
+            <input class="search-bar__submit" type="submit" />
+        </form>
+    </div>
+    <div class="home__top__left">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+            alt="" srcset="">
+    </div>
+</div>
+
+<div class="home__main">
+<!-- search one  -->
+
+<% for( let index = 0; index <20; index++ ) { %>
+    <div class="home__main__twitt">
+        <div class="home__main__twitt--img">
+            <img src="https://static.arageek.com/wp-content/uploads/2020/04/%D8%A7%D9%84%D8%AE%D9%88%D8%B1%D8%A7%D8%B2%D9%85%D9%8A.jpg"
+                alt="">
+        </div>
+    
+        <div class="home__main__twitt__right">
+            <h4 class="home__main__twitt__right--h4">
+                yasir <span> @yasir</span> · <span> 1m </span>
+            </h4>
+            <div class="profile__about--follow-2">
+              <form action="">
+               <input type="submit" value="Follwo">
+              </form>
+                   
+                
+            </div>
+        </div>
+    </div>
+<% } %>
+
+</div>
+
+
+
+<!-- end of search -->
