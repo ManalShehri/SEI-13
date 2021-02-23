@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pokedex</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Compiled and minified CSS  Materialize-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css"
+    />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Spirax|Ubuntu|Ubuntu+Mono"
+      rel="stylesheet"
+    />
+    <!--CSS-->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h2 class="center">Pokédex</h2>
+    </header>
+    <nav class="container">
+      <div class="nav-wrapper search">
+        <div class="input-field">
+          <input id="search" type="search" required />
+          <label class="label-icon" for="search">
+            <i class="material-icons">search</i>
+          </label>
+          <i class="material-icons">close</i>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <button
+        type="button"
+        class="waves-effect waves-light btn right"
+        onclick="sortPokemons()"
+      >
+        A-Z
+      </button>
+    </div>
+    <!--Here goes the dinamic JS with the API photos-->
+    <section class="photos container">
+      <div class="row">
+        <div class="pokemon-container"></div>
+      </div>
+    </section>
+    <!--MODALS-->
+    <section>
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <div class="d-flex flex-lg-row flex-column">
+            <div class="pokemon-box">
+              <figure class="photo">
+                <a href="#modal1">
+                  <img src="" alt="photo" id="modal-photo" />
+                </a>
+              </figure>
+              <div class="notch-collectibles-small">
+                <!-- Js auto -->
+                <div class="texto">
+                  <medium id="pokemon-modal-name"></medium>
+                </div>
+              </div>
+            </div>
+            <!--Here goes the text of the modal-->
+            <div class="description">
+              <h2 id="modal-name"></h2>
+              <p id="base_experience"></p>
+              <div class="box-modal">
+                <div class="row">
+                  <div class="col s12 m6">
+                    <div class="height">
+                      <p>Height:</p>
+                      <p id="height"></p>
+                    </div>
+                    <div class="weight">
+                      <p>Weight:</p>
+                      <p id="weight"></p>
+                    </div>
+                    <div class="sex">
+                      <p>Order:</p>
+                      <p id="order"></p>
+                    </div>
+                  </div>
+                  <div class="col s12 m6 offset-s2">
+                    <div class="category">
+                      <p id="category">Category:</p>
+                      <p id="pokemon-category"></p>
+                    </div>
+                    <div class="skill">
+                      <p>Base experience:</p>
+                      <p id="skill-number"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Type-->
+        <div class="type">
+          <div class="row">
+            <div class="col s7 push-s3">
+              <span class="flow-text">
+                <small>Type:</small>
+              </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s6 push-s3">
+              <span class="flow-text color">
+                <small class="p-4" id="type-pokemon"></small>
+              </span>
+            </div>
+            <div class="col s6">
+              <span class="flow-text">
+                <small></small>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!--Weakness-->
+        <div class="weaknes">
+          <div class="row">
+            <div class="col s7 push-s3">
+              <span class="flow-text">
+                <small>Hability: </small>
+              </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s3 push-s3">
+              <span class="flow-text color-weakness">
+                <small class="p-4" id="habilities"></small>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="#!"
+            class="modal-action modal-close waves-effect waves-green btn-flat"
+            >Close</a
+          >
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

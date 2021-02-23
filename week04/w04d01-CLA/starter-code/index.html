@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tack Toe</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <h1 id="h1">TIC TAC TOE X/O</h1>
+
+      <hr />
+      <div class="container">
+        <div class="left">
+          <!-- front  -->
+          <!-- active back by remove the inActive class  -->
+          <div class="front model" id="front">
+            <div class="playerChose" id="player1Choose">
+              <h3>player 1</h3>
+              <h3>chose character <span id="characterP1">🐼</span></h3>
+              <div>
+                <div>🐼</div>
+                <div>🦁</div>
+                <div>🐧</div>
+                <div>🦟</div>
+              </div>
+            </div>
+            <div class="playerChose" id="player2Choose">
+              <h3>player 2</h3>
+              <h3>chose character <span id="characterP2">🐶</span></h3>
+              <div>
+                <div>🐶</div>
+                <div>🐱</div>
+                <div>🐹</div>
+                <div>🦂</div>
+              </div>
+            </div>
+            <button class="btn" id="card-front-btn">start</button>
+          </div>
+          <!-- back  -->
+          <!-- active back by remove the inActive class  -->
+          <div class="back model inActive" id="back">
+            <div class="player p1">
+              <div id="characterP1-1">🐼</div>
+              <h4>player 1</h4>
+              <div class="circle" id="circle-p1"></div>
+              <h4 id="score">0</h4>
+            </div>
+            <div class="player p2">
+              <div id="characterP2-2">🐶</div>
+              <h4>player 2</h4>
+              <div class="circle" id="circle-p2"></div>
+              <h4 id="score">0</h4>
+            </div>
+            <button class="btn" id="card-rest-btn">rest score</button>
+          </div>
+        </div>
+        <!-- boxes  -->
+        <div id="boxes" class="right">
+          <!-- add boxes from javascript -->
+        </div>
+      </div>
+    </div>
+    <h2>created by Yasir Al-Muhtrish</h2>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/main-2.js"></script>
+  </body>
+</html>

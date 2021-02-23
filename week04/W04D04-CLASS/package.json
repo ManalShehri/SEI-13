@@ -1,0 +1,24 @@
+{
+  "name": "W04D04-CLASS",
+  "version": "1.0.0",
+  "description": "1. Define MVC and explain why it matters\r 1. Move our data into a separate file\r 1. Move our presentation code into an EJS file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/seir-alahsa/W04D04-CLASS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

@@ -1,0 +1,33 @@
+body{
+    background-image: linear-gradient( to right , rgb(185, 236, 185) , rgba(188, 221, 185, 0.507));
+}
+
+
+.container{
+    width: 100vw;
+    /* margin: auto; */
+    justify-content: center;
+    height: 80vh;
+    display: grid;
+    grid-template-columns:repeat(4 , 100px) ;
+    grid-template-rows: repeat(6 , 100px);
+    align-content: center;
+}
+
+.output{
+    background-color: #333;
+    grid-column: span 4;
+    color: wheat;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+.output h1{
+    margin: 5px;
+
+}
+.span-2{
+    grid-column: span 2;
+}
