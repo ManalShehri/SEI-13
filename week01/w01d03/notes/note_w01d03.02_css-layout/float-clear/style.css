@@ -1,0 +1,19 @@
+
+
+img{
+    width: 350px;
+  
+}
+
+.img-1 {
+    float: left;
+    margin-right: 10px;
+ 
+}
+p{
+    clear: right;
+}
+
+.img-2 {
+    float: right;
+}

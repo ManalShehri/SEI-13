@@ -1,0 +1,76 @@
+body{
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    font-family: sans-serif;
+    padding: 50px;
+}
+
+
+.nav-part{
+    text-align: center;
+    margin-top:40px;
+    font-size: 30px;
+   
+}
+.nav-part strong{
+    font-style: italic;
+}
+
+.nav-part a{
+    color:black;
+}
+
+.about-me img{
+    float:right;
+    border: 2px solid black;
+    padding: 5px;
+    width: 200px;
+    height: 200xp;
+    margin-top:15px;
+}
+ .about-me{
+     height:400px;
+     width:80%;
+     margin: 0 auto;
+ }
+ .about-me h3 {
+     font-size: 40px;
+ }
+ .about-me p {
+     margin-bottom: 20px;
+     font-size: 28px;
+ }
+.about-me nav {
+    text-align: center;
+    font-size:28px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+main nav a{
+    color:black;
+
+}
+
+
+.portfolio-main h2 span{
+    font-size:10px;
+}
+
+.portfolio-main {
+    margin: 0 auto;
+    
+}
+
+.div-img{
+    text-align: center;
+
+}
+
+.footer-nav{
+    text-align: center;
+    margin: 30px 0;
+}
+.footer-nav a{
+    color:black;
+}
+
